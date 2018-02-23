@@ -53,8 +53,6 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE_CLASSES = (
-#    'pagination.middleware.PaginationMiddleware',
-#    'session_security.middleware.SessionSecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -63,6 +61,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'pagination.middleware.PaginationMiddleware',
+    'session_security.middleware.SessionSecurityMiddleware',
 )
 
 ROOT_URLCONF = 'sysadmin.urls'
